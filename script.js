@@ -7,16 +7,10 @@ function registerUser() {
     
     if (!name || !email || !password) {
         alert('Por favor, complete todos los campos.');
-       
-name = False
-email = False
-password = False
- 
-return;
+        return;
+    }
 
-}
-
-    
+   
     const userDataContainer = document.getElementById('userData');
     userDataContainer.innerHTML = `
         <h3>Datos del Usuario Registrado:</h3>
